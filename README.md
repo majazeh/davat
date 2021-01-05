@@ -1,2 +1,2 @@
-# davat
+# Davat
 Davat Design System
