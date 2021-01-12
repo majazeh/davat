@@ -1,0 +1,29 @@
+{
+  "name": "davat",
+  "version": "1.0.0",
+  "description": "Davat Design System",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "postcss ./src/css/davat.css -o ./public/css/davat.css",
+    "watch:css": "watch 'npm run build:css'",
+    "production:css": "NODE_ENV=production postcss ./src/css/davat.css -o ./public/css/davat.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/majazeh/davat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/majazeh/davat/issues"
+  },
+  "homepage": "https://github.com/majazeh/davat#readme",
+  "dependencies": {
+    "autoprefixer": "^10.2.1",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.2",
+    "watch": "^1.0.2",
+    "win-node-env": "^0.4.0"
+  }
+}
