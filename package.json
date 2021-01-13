@@ -4,8 +4,8 @@
   "description": "Davat Design System",
   "main": "index.js",
   "scripts": {
+    "watch:css": "postcss ./src/css/**/*.css -o ./public/css/davat.css --watch",
     "build:css": "postcss ./src/css/davat.css -o ./public/css/davat.css",
-    "watch:css": "watch 'npm run build:css'",
     "production:css": "NODE_ENV=production postcss ./src/css/davat.css -o ./public/css/davat.css"
   },
   "repository": {
@@ -23,7 +23,6 @@
     "autoprefixer": "^10.2.1",
     "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.0.2",
-    "watch": "^1.0.2",
     "win-node-env": "^0.4.0"
   }
 }
