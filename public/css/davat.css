@@ -31489,7 +31489,7 @@ body {
 body.rtl {
   direction: rtl;
   text-align: right;
-  font-family: dana;
+  font-family: dana!important;
 }
 
 #aside {
