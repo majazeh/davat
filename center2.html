@@ -13,7 +13,30 @@
 <body class="flex flex-col rtl">
     <aside id="aside" class="hidden lg:block bg-gray-50 border-l border-gray-200"></aside>
     <main id="main" class="flex-1">
-        <div class="px-4 mt-4">
+        <div id="top-nav" class="flex justify-between items-center px-4 my-4">
+            <div></div>
+            <div class="flex">
+                <a href="#" class="flex justify-center items-center w-14 h-14 border border-gray-300 text-gray-400 rounded me-3 hover:bg-gray-50">
+                    <span>*</span>
+                </a>
+                <div class="flex items-center border border-gray-300 rounded px-3 hover:bg-gray-50 transition-all">
+                    <div class="flex justify-center items-center w-10 h-10 bg-blue-500 text-white text-xs rounded overflow-hidden me-3">
+                        <!-- <span>م خ</span> -->
+                        <img src="public/images/profile/1-amin-janbozorgi.jpg" alt="" class="border border-gray-200 rounded">
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="me-16">
+                            <div class="font-medium text-xs text-gray-700">امین جان‌بزرگی</div>
+                            <div class="text-xs text-gray-500">مدیر</div>
+                        </div>
+                        <div>
+                            <span>*</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="px-4">
             <div class="border border-gray-200 rounded-sm mb-4 overflow-hidden">
                 <div class="max-h-44">
                     <img src="public/images/cover/talieh-cover.jpg" alt="" class="w-full h-44 object-cover">
@@ -24,7 +47,7 @@
                             <span class="me-3">+</span>
                             <span>افزودن</span>
                         </button>
-                        <button class="flex justify-center items-center flex-shrink-0 border border-gray-400 text-gray-400 w-11 h-11 rounded-full hover:bg-gray-50 transition-all">
+                        <button class="flex justify-center items-center flex-shrink-0 border border-gray-300 text-gray-400 w-11 h-11 rounded-full hover:bg-gray-50 transition-all">
                             <span>+</span>
                         </button>
                     </div>

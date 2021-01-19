@@ -221,6 +221,15 @@
 	margin-left: 0.75rem;
 }
 
+.me-16 {
+	margin-right: 4rem;
+}
+
+.rtl .me-16 {
+	margin-right: 0;
+	margin-left: 4rem;
+}
+
 /* Custom Position Classes */
 .end-3 {
 	right: 0.75rem;
