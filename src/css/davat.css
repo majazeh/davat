@@ -231,6 +231,16 @@
 	left: 0.75rem;
 }
 
+/* Custom Direction Classes */
+.dir-rtl {
+	direction: rtl;
+}
+
+.dir-ltr {
+	direction: ltr;
+}
+
+
 html {
     height: 100%;
 }
