@@ -203,7 +203,7 @@
 }
 
 /* Custom Margin Classes */
-.ms-3 {
+/* .ms-3 {
 	margin-left: 0.75rem;
 }
 
@@ -228,17 +228,17 @@
 .rtl .me-16 {
 	margin-right: 0;
 	margin-left: 4rem;
-}
+} */
 
 /* Custom Position Classes */
-.end-3 {
+/* .end-3 {
 	right: 0.75rem;
 }
 
 .rtl .end-3 {
 	right: auto;
 	left: 0.75rem;
-}
+} */
 
 /* Custom Direction Classes */
 .dir-rtl {
