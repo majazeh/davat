@@ -12,7 +12,55 @@
 </head>
 
 <body class="flex flex-col rtl">
-    <aside id="aside" class="hidden lg:block bg-gray-50 border-l border-gray-200"></aside>
+    <aside id="aside" class="hidden md:block bg-gray-50 border-l border-gray-200 overflow-y-auto">
+        <ul class="p-3">
+            <li class="mb-1">
+                <a href="#" class="flex justify-between items-center h-12 px-6 rounded text-gray-900 hover:bg-gray-200 transition">
+                    <div class="flex items-center">
+                        <i class="fal fa-tachometer-alt-fastest ml-2"></i>
+                        <span class="font-light">پیش‌خوان</span>
+                    </div>
+                </a>
+            </li>
+
+            <li class="mb-1">
+                <a href="#" class="flex justify-between items-center h-12 px-6 rounded bg-blue-500 text-white">
+                    <div class="flex items-center">
+                        <i class="fal fa-building ml-2"></i>
+                        <span class="font-light">مراکز درمانی</span>
+                    </div>
+                    <i class="fal fa-angle-down"></i>
+                </a>
+                <ul class="pr-8 mt-2">
+                    <li>
+                        <a href="#" class="flex items-center text-sm text-gray-500 hover:text-gray-700 transition h-12 pr-4 border-r border-gray-300">طلیعه سلامت</a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center text-sm text-gray-500 hover:text-gray-700 transition h-12 pr-4 border-r border-gray-300">مرکز مشاوره خانواده</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="mb-1">
+                <a href="#" class="flex justify-between items-center h-12 px-6 rounded text-gray-900 hover:bg-gray-200 transition">
+                    <div class="flex items-center">
+                        <i class="fal fa-folder ml-2"></i>
+                        <span class="font-light">پرونده‌های من</span>
+                    </div>
+                </a>
+            </li>
+
+            <li class="mb-1">
+                <a href="#" class="flex justify-between items-center h-12 px-6 rounded text-gray-900 hover:bg-gray-200 transition">
+                    <div class="flex items-center">
+                        <i class="fal fa-user-friends ml-2"></i>
+                        <span class="font-light">جلسات درمانی</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    
     <main id="main" class="flex-1 pb-20">
         <div id="top-nav" class="flex justify-between items-center px-4 my-4">
             <div></div>
