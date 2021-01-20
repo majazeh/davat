@@ -25,7 +25,6 @@
     "tailwindcss": "^2.0.2"
   },
   "devDependencies": {
-    "tailwindcss-rtl": "^0.7.3",
     "win-node-env": "^0.4.0"
   }
 }
