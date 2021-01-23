@@ -267,16 +267,36 @@ body.rtl {
 #aside {
     position: fixed;
     top: 0;
-    left: 0;
+    left: -256px;
     width: 256px;
     height: 100%;
-    transition: all 0.2s;
+    transition: 0.2s;
     z-index: 99;
 }
 
 .rtl #aside {
-    right: 0;
+    right: -256px;
     left: auto;
+}
+
+.aside-open #aside {
+	left: 0;
+}
+
+.rtl.aside-open #aside {
+	right: 0;
+	left: auto;
+}
+
+@media (min-width: 1024px) {
+	#aside {
+		left: 0;
+	}
+
+	.rtl #aside {
+		right: 0;
+		left: auto;
+	}
 }
 
 #main {

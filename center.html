@@ -12,7 +12,7 @@
 </head>
 
 <body class="flex flex-col rtl">
-    <aside id="aside" class="hidden lg:block bg-gray-50 border-l border-gray-200 overflow-y-auto">
+    <aside id="aside" class="bg-gray-50 border-l border-gray-200 overflow-y-auto">
         <h1 class="text-2xl font-extrabold text-blue-500 py-6 px-3">
             <a href="#">ریسلو</a>
         </h1>
@@ -66,7 +66,11 @@
 
     <main id="main" class="flex-1 pb-20">
         <div id="top-nav" class="flex justify-between items-center px-4 py-4 mb-4">
-            <div></div>
+            <div>
+                <button id="aside-open" class="lg:hidden flex justify-center items-center w-12 h-12 border border-gray-300 text-gray-400 rounded hover:bg-gray-50`">
+                    <i class="fal fa-bars text-xl text-gray-500"></i>
+                </button>
+            </div>
             <div class="flex">
                 <a href="#" class="flex justify-center items-center w-12 h-12 border border-gray-300 text-gray-400 rounded hover:bg-gray-50 ml-2">
                     <i class="fal fa-bell text-xl text-gray-500"></i>
@@ -89,7 +93,7 @@
             </div>
         </div>
 
-        <div class="px-4">
+        <div id="content" class="px-4">
             <nav class="flex items-center mb-4">
                 <a href="#" class="text-xs ml-2 text-gray-500 hover:text-gray-600 transition">پیش‌خوان</a>
                 <span class="fal fa-angle-left ml-2 text-gray-500"></span>
@@ -226,6 +230,18 @@
             </nav>
         </div>
     </main>
+
+    <script>
+        document.querySelector('#aside-open').addEventListener('click', function(event) {
+            document.querySelector('body').classList.toggle('aside-open')
+        })
+
+        document.querySelector('#content').addEventListener('click', function(event) {
+            if (document.querySelector('body').classList.contains('aside-open')) {
+                document.querySelector('body').classList.remove('aside-open')
+            }
+        })
+    </script>
 </body>
 
 </html>
