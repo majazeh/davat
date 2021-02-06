@@ -23,7 +23,8 @@ module.exports = {
         },
         orange: colors.orange,
         lime: colors.lime,
-        lightBlue: colors.lightBlue
+        cyan: colors.cyan,
+        blue: colors.lightBlue
       }
     },
   },
