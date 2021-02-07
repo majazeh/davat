@@ -13,57 +13,30 @@
 
 <body class="flex flex-col">
     <aside id="aside" class="hidden md:block bg-gray-50 border-l border-gray-200 overflow-y-auto">
-        <h1 class="text-2xl font-extrabold text-blue-500 py-6 px-3">
+        <h1 class="text-2xl font-extrabold text-brand py-6 px-3">
             <a href="#">ریسلو</a>
         </h1>
         <ul class="px-3">
             <li class="mb-1">
-                <a href="#" class="flex justify-between items-center h-12 px-6 rounded bg-blue-500 text-white">
+                <a href="#" class="flex justify-between items-center h-12 px-6 rounded text-gray-900 hover:bg-gray-200 transition">
                     <div class="flex items-center">
                         <i class="fal fa-tachometer-alt-fastest ml-2"></i>
                         <span class="font-light">پیش‌خوان</span>
                     </div>
                 </a>
             </li>
-
             <li class="mb-1">
-                <a href="#" class="flex justify-between items-center h-12 px-6 rounded text-gray-900 hover:bg-gray-200 transition">
+                <a href="#" class="flex justify-between items-center h-12 px-6 rounded bg-brand text-white">
                     <div class="flex items-center">
-                        <i class="fal fa-building ml-2"></i>
-                        <span class="font-light">مراکز درمانی</span>
-                    </div>
-                    <i class="fal fa-angle-down"></i>
-                </a>
-                <ul class="pr-8 mt-2">
-                    <li>
-                        <a href="#" class="flex items-center text-sm text-gray-500 hover:text-gray-700 transition h-12 pr-4 border-r border-gray-300">طلیعه سلامت</a>
-                    </li>
-                    <li>
-                        <a href="#" class="flex items-center text-sm text-gray-500 hover:text-gray-700 transition h-12 pr-4 border-r border-gray-300">مرکز مشاوره خانواده</a>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="mb-1">
-                <a href="#" class="flex justify-between items-center h-12 px-6 rounded text-gray-900 hover:bg-gray-200 transition">
-                    <div class="flex items-center">
-                        <i class="fal fa-folder ml-2"></i>
-                        <span class="font-light">پرونده‌های من</span>
-                    </div>
-                </a>
-            </li>
-
-            <li class="mb-1">
-                <a href="#" class="flex justify-between items-center h-12 px-6 rounded text-gray-900 hover:bg-gray-200 transition">
-                    <div class="flex items-center">
-                        <i class="fal fa-user-friends ml-2"></i>
-                        <span class="font-light">جلسات درمانی</span>
+                        <i class="fal fa-cubes ml-2"></i>
+                        <span class="font-light">کامپوننت‌ها</span>
                     </div>
                 </a>
             </li>
         </ul>
     </aside>
-    <main id="main" class="flex-1">
+
+    <main id="main" class="flex-1 pb-20">
         <div id="top-nav" class="flex justify-between items-center px-4 py-4">
             <div></div>
             <div class="flex">
@@ -71,7 +44,7 @@
                     <i class="fal fa-bell text-xl text-gray-500"></i>
                 </a>
                 <a href="#" class="flex items-center border border-gray-300 rounded px-3 h-12 hover:bg-gray-50 transition-all">
-                    <div class="flex justify-center items-center w-8 h-8 rounded overflow-hidden ml-3 bg-blue-500 text-white text-xs">
+                    <div class="flex justify-center items-center w-8 h-8 rounded overflow-hidden ml-3 bg-brand text-white text-xs">
                         <span>ا ج</span>
                         <!-- <img src="images/profile/1-amin-janbozorgi.jpg" alt="" class="border border-gray-200 rounded"> -->
                     </div>
@@ -86,29 +59,156 @@
         </div>
 
         <div class="px-4 py-4">
-            <div class="border border-gray-200 p-4 rounded mb-4">
+            <div>
+                <h3 class="flex items-center font-bold mb-3 text-gray-800 cursor-default">
+                    <span class="w-8 border-t border-gray-200 inline-block ml-3"></span>
+                    <span>دکمه‌ها</span>
+                </h3>
+            </div>
+            <div class="border border-gray-200 p-4 rounded mb-8">
                 <div class="flex mb-4">
                     <button type="button" class="inline-flex justify-center items-center min-w-min h-9 px-4 bg-blue-600 text-white text-sm rounded-full hover:bg-blue-800 transition ml-4">متن دکمه</button>
+                    <button type="button" class="inline-flex justify-center items-center min-w-min h-9 px-4 bg-blue-600 text-white text-sm rounded-full hover:bg-blue-800 transition ml-4">
+                        <i class="fal fa-plus ml-2"></i>
+                        <span>متن دکمه</span>
+                    </button>
                     <button type="button" class="inline-flex justify-center items-center min-w-min h-9 px-4 bg-blue-600 text-white text-sm rounded-full transition ml-4 opacity-50 cursor-not-allowed" disabled>متن دکمه</button>
                     <button type="button" class="inline-flex justify-center items-center min-w-min h-9 px-4 bg-blue-600 text-white text-sm rounded-full">
                         <i class="fad fa-spinner-third"></i>
                     </button>
                 </div>
-                <div class="flex">
+                <div class="flex mb-4">
                     <button type="button" class="inline-flex justify-center items-center min-w-min h-9 px-4 border border-blue-700 text-blue-700 text-sm rounded-full hover:bg-blue-50 transition ml-4">متن دکمه</button>
+                    <button type="button" class="inline-flex justify-center items-center min-w-min h-9 px-4 border border-blue-700 text-blue-700 text-sm rounded-full hover:bg-blue-50 transition ml-4">
+                        <i class="fal fa-plus ml-2"></i> 
+                        <span>متن دکمه</span>
+                    </button>
                     <button type="button" class="inline-flex justify-center items-center min-w-min h-9 px-4 border border-blue-700 text-blue-700 text-sm rounded-full transition ml-4 opacity-50 cursor-not-allowed" disabled>متن دکمه</button>
                     <button type="button" class="inline-flex justify-center items-center min-w-min h-9 px-4 border border-blue-700 text-blue-700 text-sm rounded-full">
                         <i class="fad fa-spinner-third"></i>
                     </button>
                 </div>
+                <div class="flex mb-4">
+                    <button type="button" class="inline-flex justify-center items-center min-w-min h-9 w-9 border border-gray-700 text-gray-700 text-sm rounded-full hover:bg-gray-50 transition ml-1">
+                        <i class="fal fa-trash-alt"></i>
+                    </button>
+                    <button type="button" class="inline-flex justify-center items-center min-w-min h-9 px-4 border border-blue-700 text-blue-700 text-sm rounded-full hover:bg-blue-50 transition ml-4">متن دکمه</button>
+                </div>
+                <div class="flex">
+                    <button type="button" class="inline-flex justify-center items-center min-w-min h-10 px-6 bg-blue-600 text-white rounded-full hover:bg-blue-800 transition ml-4">دکمه بزرگ</button>
+                    <button type="button" class="inline-flex justify-center items-center min-w-min h-9 px-5 bg-blue-600 text-white text-sm rounded-full hover:bg-blue-800 transition ml-4">دکمه متوسط</button>
+                    <button type="button" class="inline-flex justify-center items-center min-w-min h-8 px-4 bg-blue-600 text-white text-sm rounded-full hover:bg-blue-800 transition ml-4">دکمه کوچک</button>
+                    <button type="button" class="inline-flex justify-center items-center min-w-min h-6 px-3 bg-blue-600 text-white text-xs rounded-full hover:bg-blue-800 transition ml-4">دکمه خیلی کوچک</button>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="flex items-center font-bold mb-3 text-gray-800 cursor-default">
+                    <span class="w-8 border-t border-gray-200 inline-block ml-3"></span>
+                    <span>ورودی متنی</span>
+                </h3>
             </div>
 
             <div class="border border-gray-200 p-4 rounded">
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid grid-cols-4 gap-4">
                     <div>
                         <label for="input1" class="block mb-2 text-sm text-gray-700 font-medium">ورودی متن پیش‌فرض</label>
-                        <input type="text" name="" id="input1" placeholder="متن پلیس‌هولدر" class="border border-gray-500 h-10 rounded px-4 w-full text-sm placeholder-gray-300">
+                        <input type="text" name="" id="input1" class="border border-gray-500 h-10 rounded px-4 w-full text-sm focus:border-brand focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-opacity-60">
                     </div>
+                    <div>
+                        <label for="input2" class="block mb-2 text-sm text-gray-700 font-medium">ورودی متن + پلیس‌هولدر</label>
+                        <input type="text" name="" id="input2" placeholder="متن پلیس‌هولدر" class="border border-gray-500 h-10 rounded px-4 w-full text-sm placeholder-gray-300 focus:border-brand focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-opacity-60">
+                    </div>
+                    <div>
+                        <label for="input3" class="block mb-2 text-sm text-gray-700 font-medium opacity-50 cursor-not-allowed" disabled>ورودی متن + غیرفعال</label>
+                        <input type="text" name="" id="input3" class="border border-gray-500 h-10 rounded px-4 w-full text-sm opacity-50 cursor-not-allowed focus:border-brand focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-opacity-60" disabled>
+                    </div>
+                    <div></div>
+                    <div>
+                        <label for="input4" class="block mb-2 text-sm text-gray-700 font-medium">ورودی متن + راهنما</label>
+                        <input type="text" name="" id="input4" placeholder="متن راهنما در پلیس‌هولدر" class="border border-gray-500 h-10 rounded px-4 w-full text-sm placeholder-gray-300 focus:border-brand focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-opacity-60">
+                    </div>
+                    <div>
+                        <label for="input5" class="block mb-2 text-sm text-gray-700 font-medium">ورودی متن + راهنما زیر اینپوت</label>
+                        <input type="text" name="" id="input5" class="border border-gray-500 h-10 rounded px-4 w-full text-sm focus:border-brand focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-opacity-60">
+                        <div class="flex items-center text-xs text-gray-400 mt-2">
+                            <i class="fal fa-info-circle ml-1"></i> 
+                            <span>متن راهنما برای ورودی متن</span>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div>
+                        <label for="input6" class="block mb-2 text-sm text-gray-700 font-medium">ورودی عدد</label>
+                        <input type="text" name="" id="input6" class="border border-gray-500 h-10 rounded px-4 w-full text-sm text-left dir-ltr focus:border-brand focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-opacity-60">
+                    </div>
+                    <div>
+                        <label for="input7" class="block mb-2 text-sm text-gray-700 font-medium">ورودی عدد + تعداد کاراکتر</label>
+                        <input type="text" name="" id="input7" class="border border-gray-500 h-10 rounded px-4 w-full text-sm text-left dir-ltr focus:border-brand focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-opacity-60">
+                        <span class="block text-xs text-left dir-ltr text-gray-400 mt-1">۰/۱۵</span>
+                    </div>
+                    <div class="relative">
+                        <label for="input8" class="block mb-2 text-sm text-gray-700 font-medium">ورودی عدد + پاک کردن</label>
+                        <input type="text" name="" id="input8" class="border border-gray-500 h-10 rounded pl-4 pr-8 w-full text-sm text-left dir-ltr focus:border-brand focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-opacity-60">
+                        <i class="fal fa-times-circle absolute bottom-8 right-3 text-xs text-gray-500"></i>
+                    </div>
+                    <div></div>
+                    <div>
+                        <label for="input9" class="block mb-2 text-sm text-gray-700 font-medium">ورودی متن + خطا</label>
+                        <input type="text" name="" id="input9" class="border border-red-500 ring-2 ring-red-500 ring-opacity-50 h-10 rounded px-4 w-full text-sm focus:border-brand focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-brand focus:ring-opacity-60">
+                        <div class="flex items-center text-xs text-red-500 mt-2">
+                            <i class="fal fa-exclamation-triangle ml-1"></i> 
+                            <span>متن خطای احتمالی</span>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="input10" class="block mb-2 text-sm text-gray-700 font-medium">ورودی متن + خطا</label>
+                        <input type="text" name="" id="input10" class="border border-red-500 ring-2 ring-red-500 ring-opacity-50 h-10 rounded px-4 w-full text-sm focus:border-brand focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-brand focus:ring-opacity-60">
+                        <div class="flex items-center text-xs text-red-500 mt-2">
+                            <i class="fal fa-exclamation-triangle ml-1"></i> 
+                            <span>متن خطای احتمالی</span>
+                        </div>
+                        <div class="flex items-center text-xs text-gray-400 mt-1">
+                            <i class="fal fa-info-circle ml-1"></i> 
+                            <span>متن راهنما برای ورودی متن</span>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div class="relative">
+                        <label for="input11" class="block mb-2 text-sm text-gray-700 font-medium">ورودی رمزعبور</label>
+                        <input type="password" name="" id="input11" class="border border-gray-500 h-10 rounded pl-9 pr-4 w-full text-left dir-ltr focus:border-brand focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-opacity-60" required>
+                        <i class="fal fa-eye absolute bottom-2 left-3 text-sm leading-normal text-gray-500"></i>
+                    </div>
+                    <div class="relative">
+                        <label for="input12" class="block mb-2 text-sm text-gray-700 font-medium">ورودی رمزعبور + پاک کردن</label>
+                        <input type="password" name="" id="input12" class="border border-gray-500 h-10 rounded px-9 w-full text-left dir-ltr focus:border-brand focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-opacity-60" required>
+                        <i class="fal fa-eye absolute bottom-2 left-3 text-sm leading-normal text-gray-500"></i>
+                        <i class="fal fa-times-circle absolute bottom-3 right-3 text-xs text-gray-500"></i>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div>
+                        <label for="input13" class="block mb-2 text-sm text-gray-700 font-medium">کد تخفیف</label>
+                        <input type="text" name="" id="input13" class="border border-gray-500 h-10 rounded px-4 w-full text-sm text-left dir-ltr focus:border-brand focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-opacity-60">
+                    </div>
+                    <div>
+                        <label for="input14" class="block mb-2 text-sm text-gray-700 font-medium">کد تخفیف + پلیس‌هولدر</label>
+                        <input type="text" name="" id="input14" placeholder="متن پلیس‌هولدر" class="border border-gray-500 h-10 rounded px-4 w-full text-sm text-left dir-ltr placeholder-gray-300 focus:border-brand focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-opacity-60">
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <!-- <div class="relative">
+                        <label for="input15" class="block mb-2 text-sm text-gray-700 font-medium">کد تخفیف + در حال بررسی</label>
+                        <input type="text" name="" id="input15" class="border border-gray-500 h-10 rounded px-4 w-full text-sm text-left dir-ltr placeholder-gray-300 focus:border-brand focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-opacity-60">
+                        <i class="fad fa-spinner-third absolute bottom-3 right-3 text-gray-500"></i>
+                    </div>
+                    <div class="relative">
+                        <label for="input16" class="block mb-2 text-sm text-gray-700 font-medium">کد تخفیف + تأیید کد</label>
+                        <input type="text" name="" id="input16" class="border border-gray-500 h-10 rounded px-4 w-full text-sm text-left dir-ltr placeholder-gray-300 focus:border-brand focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-opacity-60">
+                        <i class="fad fa-spinner-third absolute bottom-3 right-3 text-gray-500"></i>
+                        <span class="text-xs text-gray-400 mt-1">کد وارد شده معتبر ‌می‌باشد.</span>
+                    </div> -->
                 </div>
             </div>
         </div>
