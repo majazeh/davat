@@ -60,6 +60,7 @@
         </div>
 
         <div class="px-4 py-4">
+            <span>Hi</span>
             <div>
                 <h3 class="flex items-center font-bold mb-3 text-gray-800 cursor-default">
                     <span class="w-8 border-t border-gray-200 inline-block ml-3"></span>
@@ -81,7 +82,7 @@
                 <div class="flex mb-4">
                     <button type="button" class="inline-flex justify-center items-center min-w-min h-9 px-4 border border-blue-700 text-blue-700 text-sm rounded-full hover:bg-blue-50 transition ml-4">متن دکمه</button>
                     <button type="button" class="inline-flex justify-center items-center min-w-min h-9 px-4 border border-blue-700 text-blue-700 text-sm rounded-full hover:bg-blue-50 transition ml-4">
-                        <i class="fal fa-plus ml-2"></i> 
+                        <i class="fal fa-plus ml-2"></i>
                         <span>متن دکمه</span>
                     </button>
                     <button type="button" class="inline-flex justify-center items-center min-w-min h-9 px-4 border border-blue-700 text-blue-700 text-sm rounded-full transition ml-4 opacity-50 cursor-not-allowed" disabled>متن دکمه</button>
@@ -133,7 +134,7 @@
                         <label for="input5" class="block mb-2 text-sm text-gray-700 font-medium">ورودی متن + راهنما زیر اینپوت</label>
                         <input type="text" name="" id="input5" class="border border-gray-500 h-10 rounded px-4 w-full text-sm focus:border-brand focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-opacity-60">
                         <div class="flex items-center text-xs text-gray-400 mt-2">
-                            <i class="fal fa-info-circle ml-1"></i> 
+                            <i class="fal fa-info-circle ml-1"></i>
                             <span>متن راهنما برای ورودی متن</span>
                         </div>
                     </div>
@@ -158,7 +159,7 @@
                         <label for="input9" class="block mb-2 text-sm text-gray-700 font-medium">ورودی متن + خطا</label>
                         <input type="text" name="" id="input9" class="border border-red-500 ring-2 ring-red-500 ring-opacity-50 h-10 rounded px-4 w-full text-sm focus:border-brand focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-brand focus:ring-opacity-60">
                         <div class="flex items-center text-xs text-red-500 mt-2">
-                            <i class="fal fa-exclamation-triangle ml-1"></i> 
+                            <i class="fal fa-exclamation-triangle ml-1"></i>
                             <span>متن خطای احتمالی</span>
                         </div>
                     </div>
@@ -166,11 +167,11 @@
                         <label for="input10" class="block mb-2 text-sm text-gray-700 font-medium">ورودی متن + خطا</label>
                         <input type="text" name="" id="input10" class="border border-red-500 ring-2 ring-red-500 ring-opacity-50 h-10 rounded px-4 w-full text-sm focus:border-brand focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-brand focus:ring-opacity-60">
                         <div class="flex items-center text-xs text-red-500 mt-2">
-                            <i class="fal fa-exclamation-triangle ml-1"></i> 
+                            <i class="fal fa-exclamation-triangle ml-1"></i>
                             <span>متن خطای احتمالی</span>
                         </div>
                         <div class="flex items-center text-xs text-gray-400 mt-1">
-                            <i class="fal fa-info-circle ml-1"></i> 
+                            <i class="fal fa-info-circle ml-1"></i>
                             <span>متن راهنما برای ورودی متن</span>
                         </div>
                     </div>
@@ -235,7 +236,7 @@
                         <label for="textarea3" class="block mb-2 text-sm text-gray-700 font-medium">ورودی متن بلند + تعداد کاراکتر</label>
                         <textarea id="textarea3" name="" class="resize-none border border-gray-500 h-24 rounded px-4 py-2 w-full text-sm placeholder-gray-300 focus:border-brand focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-opacity-60"></textarea>
                         <div class="flex items-center text-xs text-gray-400 mt-1">
-                            <i class="fal fa-info-circle ml-1"></i> 
+                            <i class="fal fa-info-circle ml-1"></i>
                             <span>متن راهنما برای ورودی متن</span>
                         </div>
                     </div>
@@ -330,6 +331,34 @@
             </div>
         </div>
     </main>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml: true,
+                version: 'v10.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/ar_AR/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat"
+        attribution="setup_tool"
+        page_id="197514458478164"
+        theme_color="#CE2D4F"
+        logged_in_greeting="بإمكانكم بدء محادثة مباشرة مع فريق الدعم في ايمول"
+        logged_out_greeting="بإمكانكم بدء محادثة مباشرة مع فريق الدعم في ايمول">
+    </div>
 
     <script src="vendor/jquery-3.5.1/jquery-3.5.1.min.js"></script>
     <script src="vendor/select2/select2.min.js"></script>
