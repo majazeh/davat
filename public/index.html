@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="vendor/select2/select2.min.css">
     <link rel="stylesheet" href="css/fontawesome-5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="vendor/tabby/tabby-ui.min.css">
     <link rel="stylesheet" href="css/davat.css">
 
     <title>Davat Design | دوات دیزاین</title>
@@ -65,34 +66,53 @@
                 <h3 class="font-bold text-gray-800">زبانه‌ها</h3>
             </div>
 
-            <style>
-            .b-tab {
-                padding: 20px;
-                border: 1px solid #000;
-                display: none;
-            }
+            <div class="p-4 border border-gray-200 mb-8">
+                <!-- Test Tabby -->
 
-            .b-tab.active {
-                display: block;
-            }
+                <ul data-tabs>
+                    <li><a data-tabby-default href="#harry">Harry Potter</a></li>
+                    <li><a href="#hermione">Hermione</a></li>
+                    <li><a href="#neville">Neville</a></li>
+                </ul>
 
-            .b-nav-tab {
-                display: inline-block;
-                padding: 20px;
-            }
 
-            .b-nav-tab.active {
-                color: #ff4200;
-            }
-            </style>
+                <div id="harry">
+                    <h2>Harry Potter</h2>
 
-            <div class="border border-gray-200 p-4 rounded mb-8">
-                <a href="#orange" data-tab="orange" class="b-nav-tab active">Orange</a>
-                <a href="#green" data-tab="green" class="b-nav-tab">Green</a>
-                <a href="#blue" data-tab="blue" class="b-nav-tab">Blue</a>
-                <div id="orange" class="b-tab active">Orange tab content</div>
-                <div id="green" class="b-tab">Green tab content</div>
-                <div id="blue" class="b-tab">Blue tab content</div>
+                    <p><strong>Fun Facts:</strong></p>
+                    <ol>
+                        <li>"The boy who lived"</li>
+                        <li>Best friends with Ron and Hermione</li>
+                        <li>Fails up on a regular basis</li>
+                    </ol>
+                    <p><a href="https://en.wikipedia.org/wiki/Harry_Potter_(character)">More about Harry &rarr;</a></p>
+                </div>
+
+                <div id="hermione">
+                    <h2>Hermione</h2>
+
+                    <p><strong>Fun Facts:</strong></p>
+                    <ol>
+                        <li>The real hero of the Harry Potter series</li>
+                        <li>Underappreciated by her friends, but always saves the day</li>
+                        <li>Harry somehow gets credit for her accomplishments on a regular basis</li>
+                    </ol>
+                    <p><a href="https://en.wikipedia.org/wiki/Hermione_Granger">More about Hermione &rarr;</a></p>
+                </div>
+
+                <div id="neville">
+                    <h2>Neville</h2>
+
+                    <p><strong>Fun Facts:</strong></p>
+                    <ol>
+                        <li>The surprise hero of the last book</li>
+                        <li>His life is forever intertwined with Harry's</li>
+                        <li>Total badass</li>
+                    </ol>
+                    <p><a href="https://www.pottermore.com/explore-the-story/neville-longbottom">More about Neville &rarr;</a></p>
+                </div>
+
+                <!-- End Test Tabby -->
             </div>
 
             <div>
@@ -368,6 +388,7 @@
 
     <script src="vendor/jquery-3.5.1/jquery-3.5.1.min.js"></script>
     <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/tabby/tabby.min.js"></script>
     <script src="js/davat.js"></script>
 </body>
 
