@@ -1,14 +1,47 @@
-// document.querySelector('#aside-open').addEventListener('click', function(event) {
-//     document.querySelector('body').classList.toggle('aside-open')
-// });
+'use strict';
 
-// document.querySelector('#content').addEventListener('click', function(event) {
-//     if (document.querySelector('body').classList.contains('aside-open')) {
-//         document.querySelector('body').classList.remove('aside-open')
-//     }
-// });
+function Tabs() {
+    var bindAll = function() {
+        var menuElements = document.querySelectorAll('[data-tab]');
+        for (var i = 0; i < menuElements.length ; i++) {
+            menuElements[i].addEventListener('click', change, false);
+        }
+    }
 
-$(".select-placeholder").select2({
-    placeholder: "انتخاب کنید",
-    allowClear: true
+    var clear = function() {
+        var menuElements = document.querySelectorAll('[data-tab]');
+        for (var i = 0; i < menuElements.length ; i++) {
+            menuElements[i].classList.remove('active');
+            var id = menuElements[i].getAttribute('data-tab');
+            document.getElementById(id).classList.remove('active');
+        }
+    }
+
+    var change = function(e) {
+        clear();
+        e.target.classList.add('active');
+        var id = e.currentTarget.getAttribute('data-tab');
+        document.getElementById(id).classList.add('active');
+    }
+
+    bindAll();
+}
+
+var connectTabs = new Tabs();
+
+$(document).ready(function() {
+    $('#aside-open').click(function (event) {
+        $('body').toggleClass('aside-open');
+    });
+
+    $('#content').click(function (event) {
+        if ($('body').hasClass('aside-open')) {
+            $('body').removeClass('aside-open');
+        }
+    });
+
+    $(".select-placeholder").select2({
+        placeholder: "انتخاب کنید",
+        allowClear: true
+    });
 });

@@ -60,7 +60,41 @@
         </div>
 
         <div class="px-4 py-4">
-            <span>Hi</span>
+            <div class="flex items-center mb-4 cursor-default">
+                <span class="w-8 border-t border-gray-200 inline-block ml-3"></span>
+                <h3 class="font-bold text-gray-800">زبانه‌ها</h3>
+            </div>
+
+            <style>
+            .b-tab {
+                padding: 20px;
+                border: 1px solid #000;
+                display: none;
+            }
+
+            .b-tab.active {
+                display: block;
+            }
+
+            .b-nav-tab {
+                display: inline-block;
+                padding: 20px;
+            }
+
+            .b-nav-tab.active {
+                color: #ff4200;
+            }
+            </style>
+
+            <div class="border border-gray-200 p-4 rounded mb-8">
+                <a href="#orange" data-tab="orange" class="b-nav-tab active">Orange</a>
+                <a href="#green" data-tab="green" class="b-nav-tab">Green</a>
+                <a href="#blue" data-tab="blue" class="b-nav-tab">Blue</a>
+                <div id="orange" class="b-tab active">Orange tab content</div>
+                <div id="green" class="b-tab">Green tab content</div>
+                <div id="blue" class="b-tab">Blue tab content</div>
+            </div>
+
             <div>
                 <h3 class="flex items-center font-bold mb-3 text-gray-800 cursor-default">
                     <span class="w-8 border-t border-gray-200 inline-block ml-3"></span>
