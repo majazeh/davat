@@ -4,7 +4,7 @@
   "description": "Davat Design System",
   "main": "index.js",
   "scripts": {
-    "watch:css": "postcss ./src/css/**/*.css -o ./public/css/davat.css --watch",
+    "watch:css": "postcss ./src/css/**/*.css -o ./public/css/davat.css -w",
     "build:css": "postcss ./src/css/davat.css -o ./public/css/davat.css",
     "production:css": "NODE_ENV=production postcss ./src/css/davat.css -o ./public/css/davat.css"
   },
@@ -19,13 +19,12 @@
     "url": "https://github.com/majazeh/davat/issues"
   },
   "homepage": "https://github.com/majazeh/davat#readme",
-  "dependencies": {
-    "@tailwindcss/forms": "^0.2.1",
-    "autoprefixer": "^10.2.1",
-    "postcss-cli": "^8.3.1",
-    "tailwindcss": "^2.0.2"
-  },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.3.2",
+    "@tailwindcss/line-clamp": "^0.2.0",
+    "autoprefixer": "^10.2.5",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.2",
     "win-node-env": "^0.4.0"
   }
 }

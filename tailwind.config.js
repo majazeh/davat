@@ -9,16 +9,16 @@ module.exports = {
     extend: {
       colors: {
         brand: {
-          DEFAULT: '#007BA4',
-          '50': '#8BE2FF',
-          '100': '#71DCFF',
-          '200': '#3ECFFF',
-          '300': '#0BC2FF',
-          '400': '#00A1D7',
-          '500': '#007BA4',
+          DEFAULT: '#007ba4',
+          '50': '#8be2ff',
+          '100': '#71dcff',
+          '200': '#3ecfff',
+          '300': '#0bc2ff',
+          '400': '#00a1d7',
+          '500': '#007ba4',
           '600': '#005571',
-          '700': '#002F3E',
-          '800': '#00080B',
+          '700': '#002f3e',
+          '800': '#00080b',
           '900': '#000000'
         },
         orange: colors.orange,
@@ -32,6 +32,7 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require('@tailwindcss/forms')
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/line-clamp'),
   ],
 }
