@@ -203,24 +203,24 @@
 }
 
 /* Custom Direction Classes */
-.dir-rtl {
+.rtl {
 	direction: rtl;
 }
 
-.dir-ltr {
+.ltr {
 	direction: ltr;
 }
 
 /* CSS */
 html {
-    height: 100%;
+    @apply h-full;
 }
 
 body {
-	min-height: 100%;
+	@apply min-h-full;
 }
 
-[dir="rtl"] {
+[lang="fa"] {
     font-family: dana!important;
 }
 

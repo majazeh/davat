@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html dir="rtl" lang="fa">
+<html lang="fa" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="vendor/select2/select2.min.css">
-    <link rel="stylesheet" href="css/fontawesome-5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="vendor/tabby/tabby-ui.min.css">
+    <link rel="stylesheet" href="vendors/fontawesome-5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="vendors/select2/select2.min.css">
+    <link rel="stylesheet" href="vendors/tabby/tabby-ui.min.css">
     <link rel="stylesheet" href="css/davat.css">
 
     <title>Davat Design | دوات دیزاین</title>
@@ -38,15 +38,16 @@
         </ul>
     </aside>
 
-    <main id="main" class="flex-1 pb-20">
-        <div id="top-nav" class="flex justify-between items-center px-4 py-4">
+    <main id="main" class="flex-1">
+        <header id="header" class="flex justify-between items-center h-20 px-4">
             <div></div>
             <div class="flex">
                 <a href="#" class="flex justify-center items-center w-12 h-12 border border-gray-300 text-gray-400 rounded hover:bg-gray-50 ml-2">
                     <i class="fal fa-bell text-xl text-gray-500"></i>
                 </a>
-                <a href="#" class="flex items-center border border-gray-300 rounded px-3 h-12 hover:bg-gray-50 transition-all">
-                    <div class="flex justify-center items-center w-8 h-8 rounded overflow-hidden ml-3 bg-brand text-white text-xs">
+
+                <a href="#" class="flex items-center border border-gray-300 rounded px-2 h-12 hover:bg-gray-50 transition-all">
+                    <div class="flex justify-center items-center w-8 h-8 rounded overflow-hidden ml-2 bg-brand text-white text-xs">
                         <span>ا ج</span>
                         <!-- <img src="images/profile/1-amin-janbozorgi.jpg" alt="" class="border border-gray-200 rounded"> -->
                     </div>
@@ -58,9 +59,9 @@
                     </div>
                 </a>
             </div>
-        </div>
+        </header>
 
-        <div class="px-4 py-4">
+        <div class="p-4">
             <div class="flex items-center mb-4 cursor-default">
                 <span class="w-8 border-t border-gray-200 inline-block ml-3"></span>
                 <h3 class="font-bold text-gray-800">زبانه‌ها</h3>
@@ -325,7 +326,7 @@
                 </h3>
             </div>
 
-            <div class="border border-gray-200 p-4 rounded mb-8">
+            <div class="border border-gray-200 p-4 rounded">
                 <div class="grid grid-cols-4 gap-4">
                     <div>
                         <h3 class="block mb-2 text-gray-700 font-medium">عنوان دکمه‌ چک‌باکس</h3>

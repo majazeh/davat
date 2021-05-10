@@ -2013,11 +2013,11 @@ select {
 
 /* Custom Direction Classes */
 
-.dir-rtl {
+.rtl {
   direction: rtl;
 }
 
-.dir-ltr {
+.ltr {
   direction: ltr;
 }
 
@@ -2031,7 +2031,7 @@ body {
   min-height: 100%;
 }
 
-[dir="rtl"] {
+[lang="fa"] {
   font-family: dana!important;
 }
 
